@@ -2,7 +2,7 @@
 FROM jboss/wildfly:latest
 
 # Maintainer
-MAINTAINER Christian Metz <christian@metzweb.net>
+#MAINTAINER Christian Metz <christian@metzweb.net>
 
 # Appserver
 ENV WILDFLY_USER admin

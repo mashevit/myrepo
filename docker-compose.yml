@@ -3,7 +3,7 @@ version: "2"
 services:
   app:
     container_name: "app"
-    image: "qqqq"
+    image: "mashevit/travels1"
     environment:
       - WILDFLY_USER=admin
       - WILDFLY_PASS=adminPassword

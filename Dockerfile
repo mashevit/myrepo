@@ -11,7 +11,7 @@ ENV WILDFLY_PASS adminPassword
 # Database
 ENV DB_NAME travel1
 ENV DB_USER ilia
-ENV DB_PASS rdspass8
+ENV DB_PASS rdspass81
 ENV DB_URI travel8i.cp0kd4cqma4j.us-east-1.rds.amazonaws.com:3306
 
 ENV MYSQL_VERSION 6.0.6

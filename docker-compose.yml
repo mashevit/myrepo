@@ -1,0 +1,36 @@
+version: "2"
+
+services:
+  app:
+    container_name: "app"
+    image: "qqqq"
+    environment:
+      - WILDFLY_USER=admin
+      - WILDFLY_PASS=adminPassword
+      - DB_NAME=travel1
+      - DB_USER=ilia
+      - DB_PASS=rdspass8
+      - DB_URI=travel8i.cp0kd4cqma4j.us-east-1.rds.amazonaws.com:3306
+    # depends_on:
+    #   - db
+    ports:
+      - "8080:8080" # application
+      - "9990:9990" # admin console
+
+  # db:
+  #   container_name: "db"
+  #   image: "mysql:latest"
+  #   environment:
+  #     - MYSQL_DATABASE=travel1
+  #     - MYSQL_USER=mysql
+  #     - MYSQL_PASSWORD=qwqw
+  #     - MYSQL_ROOT_PASSWORD=qwqw
+  #   #volumes:
+  #    # - ./workdir/db/init/:/docker-entrypoint-initdb.d/ # init database
+  #    # - ./workdir/db/data/:/var/lib/mysql/              # data storage
+  #   ports:
+  #     - "3306:3306"
+
+networks:
+    default:
+        driver: bridge

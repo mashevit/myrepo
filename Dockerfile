@@ -42,7 +42,7 @@ RUN echo "=> Starting WildFly server" && \
         --user-name=ilia \
         --password=rdspass8 \
         --driver-name=mysql \
-        --connection-url=jdbc:mysql://travel8i.cp0kd4cqma4j.us-east-1.rds.amazonaws.com:3306/${DB_NAME} \
+        --connection-url=jdbc:mysql://travel8i.cp0kd4cqma4j.us-east-1.rds.amazonaws.com:3306/travel1?useSSL=true \
         --use-ccm=false \
         --max-pool-size=25 \
         --blocking-timeout-wait-millis=5000 \
